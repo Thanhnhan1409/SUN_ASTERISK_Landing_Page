@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang chủ - English - Sun* Inc. Recruitment</title>
+  <title>Home page - English - Sun* Inc. Recruitment</title>
   <link rel="icon" href="../../assets/images/bear-footer.png" type="image/x-icon">
   <link rel="stylesheet" href="../../assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,8 +43,8 @@
           </div>
         </div>
         <ul class="header__locale">
-          <li class="header__locale--vi">VI</li>
-          <li class="header__locale--en">EN</li>
+          <a href="./vi.html" class="header__locale--vi">VI</a>
+          <a href="./index.html" class="header__locale--en">EN</a>
         </ul>
       </div>
     </div>
@@ -101,83 +101,92 @@
           <div class="project-data">
             <div class="data__group">
               <div class="data__box">
-                <div class="data--number">200</div>
+                <div class="data--number data__number--first"></div>
                 <div class="data__unit">
                   <div class="data__unit--plus">++</div>
                   <div class="data__unit--text">Clients</div>
                 </div>
               </div>
               <div class="data__box">
-                <div class="data--number">300</div>
+                <div class="data--number data__number--second"></div>
                 <div class="data__unit">
                   <div class="data__unit--plus">++</div>
                   <div class="data__unit--text">Supported Services</div>
                 </div>
               </div>
             </div>
-            <button class="card__button platform-card__button">
+            <button class="card__button platform-card__button project__button">
               <span>See all project</span>
               <div class="card__icon">
                 <img src="../../assets/icons/right-icon.svg" alt="arrow">
               </div>
             </button>
           </div>
-          <div class="project__slider--box">
-            <div class="project__slider">
-              <div class="project__slides">
-                <div class="project__slide">
+          <div class="slide__wrapper">
+            <div class="slider-container">
+              <input type="radio" name="slider" id="slide1" checked>
+              <input type="radio" name="slider" id="slide2">
+              <input type="radio" name="slider" id="slide3">
+              <div class="slider">
+                <div class="slide slide-first">
                   <div class="project__slide--content">
                     <div class="project__slide--company-name">SSK Company Limited</div>
                     <div class="project__slide--project-name"> SSK Project </div>
                     <div class="project__slide--description">Challenge to energize people and society with sports data.</div>
-                    <div class="culture-event__detail">
+                    <div class="project__link">
                       <a href="./index.html">
-                        <div class="culture-event__detail--text">View Detail</div>
-                        <div class="culture-event__icon">
-                          <img src="../../assets/icons/right-icon.svg" alt="right">
-                        </div>
+                        <span>View Detail</span>
+                        <img src="../../assets/icons/right-icon.svg" alt="right">
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="project__slide">
+                <div class="slide">
+                  <div class="project__slide--content">
+                    <div class="project__slide--company-name">Công ty TNHH ZENKIGEN</div>
+                    <div class="project__slide--project-name"> HARUTAKA Project </div>
+                    <div class="project__slide--description">“HARUTAKA” allows companies and job seekers/ applicants to interview on the web or in video at any time, in any place.</div>
+                    <div class="project__link">
+                      <a href="./index.html">
+                        <span>View Detail</span>
+                        <img src="../../assets/icons/right-icon.svg" alt="right">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
                   <div class="project__slide--content">
                     <div class="project__slide--company-name">Kurashicom Inc</div>
                     <div class="project__slide--project-name"> KURASHICOM Project </div>
                     <div class="project__slide--description">App development helps to realize the lifestyle that you want</div>
-                    <div class="culture-event__detail">
-                      <a href="./index.html">
-                        <div class="culture-event__detail--text">View Detail</div>
-                        <div class="culture-event__icon">
-                          <img src="../../assets/icons/right-icon.svg" alt="right">
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project__slide">
-                  <div class="project__slide--content">
-                    <div class="project__slide--company-name">SSK Company Limited</div>
-                    <div class="project__slide--project-name"> SSK Project </div>
-                    <div class="project__slide--description">Challenge to energize people and society with sports data.</div>
-                    <div class="culture-event__detail">
-                      <a href="./index.html">
-                        <div class="culture-event__detail--text">View Detail</div>
-                        <div class="culture-event__icon">
-                          <img src="../../assets/icons/right-icon.svg" alt="right">
-                        </div>
+                    <div class="project__link">
+                      <a href="#">
+                        <span>View Detail</span>
+                        <img src="../../assets/icons/right-icon.svg" alt="right">
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project__slider--icons">
-              <div class="project__slider--icon">
-                <img src="../../assets/icons/chevron-left-icon.svg" alt="left">
-              </div>
-              <div class="project__slider--icon">
-                <img src="../../assets/icons/chevron-right-icon.svg" alt="right">
+              <div class="arrow__div">
+                <label id="prev-slide1" class="prev arrow__label" for="slide3">
+                  <img class="arrow__img" src="../../assets/icons/chevron-left-icon.svg" alt="left">
+                </label>
+                <label id="next-slide1" class="next arrow__label" for="slide2">
+                  <img class="arrow__img" src="../../assets/icons/chevron-right-icon.svg" alt="right">
+                </label>
+                <label id="prev-slide2" class="prev arrow__label" for="slide1">
+                  <img class="arrow__img" src="../../assets/icons/chevron-left-icon.svg" alt="left">
+                </label>
+                <label id="next-slide2" class="next arrow__label" for="slide3">
+                  <img class="arrow__img" src="../../assets/icons/chevron-right-icon.svg" alt="right">
+                </label>
+                <label id="prev-slide3" class="prev arrow__label" for="slide2">
+                  <img class="arrow__img" src="../../assets/icons/chevron-left-icon.svg" alt="left">
+                </label>
+                <label id="next-slide3" class="next arrow__label" for="slide1">
+                  <img class="arrow__img" src="../../assets/icons/chevron-right-icon.svg" alt="right">
+                </label>
               </div>
             </div>
           </div>
@@ -288,6 +297,12 @@
         </div>
       </div>
     </section>
+
+    <div class="widget__box">
+      <div class="widget__button">
+        <a href="./index.html"> Join us</a>
+      </div>
+    </div>
   </main>
 
   <footer>

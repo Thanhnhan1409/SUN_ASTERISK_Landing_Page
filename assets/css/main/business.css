@@ -1,7 +1,9 @@
 /* Bussiness */
 
 .bussiness__section {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
 .bussiness__section--content {
@@ -38,6 +40,9 @@
 }
 
 .bussiness--image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin: -80px 25px -70px 70px;
   position: relative;
   width: 50%;

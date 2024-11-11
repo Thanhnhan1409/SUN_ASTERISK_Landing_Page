@@ -51,6 +51,12 @@
 .card--text {
   margin-bottom: 30px;
   position: relative;
+  z-index: 2;
+}
+
+.platform__card .card--text::before {
+  background-color: #f3f3f3;
+  z-index: -1;
 }
 
 .card__button span {
@@ -216,10 +222,6 @@
 @media screen and (max-width: 1199px) {
   .card__section h2 {
     font-size: 22px;
-  }
-
-  .card__button {
-    max-width: 336px;
   }
 }
 

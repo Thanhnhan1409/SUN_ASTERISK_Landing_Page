@@ -1,6 +1,4 @@
-/* Culture - Event Section */
-
-.culture__section {
+/* .culture__section {
   position: relative;
 }
 
@@ -16,7 +14,7 @@
 }
 
 .culture__news {
-  align-items: cente/* display: none; Hide radio buttons */r;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -171,8 +169,6 @@
   justify-content: space-between;
 }
 
-/* Slider */
-
 .culture__section .slider-container {
   max-width: 100%;
 }
@@ -315,4 +311,51 @@ input#culture-slide3:checked~.arrow__div #next-slide1 {
   .culture__section .slide {
     flex: 0 0 auto;
   }
+} */
+.culture__section h2 {
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  color: #2b3441;
+}
+
+.culture__section h2::before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-color: #c01111;
+  border-radius: 50%;
+  position: absolute;
+  top: -45px;
+  right: 5%;
+}
+
+.card__description {
+  color: #949ba4;
+}
+
+.badge {
+  top: -16px !important;
+  right: -16px !important;
+}
+
+.card-body p {
+  max-height: 75px;
+  text-overflow: ellipsis;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+.main .bg-light {
+  background-color: rgba(192, 17, 17, .1) !important;
+}
+
+.culture__section .card--text::before {
+  top: 10px;
+  left: 6px;
+  background-color: rgba(228,228,228,.4);
+  z-index: -1;
 }

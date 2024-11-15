@@ -1,4 +1,4 @@
-/* Bussiness */
+/* Bussiness
 
 .bussiness__section {
   margin-bottom: 10px;
@@ -79,5 +79,58 @@
     margin: 0;
     padding: 15px;
     width: 100%;
+  }
+} */
+
+/* Business custom styles */
+.business__section {
+  margin-bottom: 10px;
+}
+
+.business__section--content {
+  border: 6px solid #f9f9f9;
+  border-radius: 16px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.business__section--content::before {
+  border: 6px solid #f9f9f9;
+  border-radius: 16px;
+  content: '';
+  height: calc(100% - 80px);
+  position: absolute;
+  width: 110px;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.business__section--title {
+  font-size: 32px;
+}
+
+.business--image  img {
+  margin: -80px 25px -70px 70px;
+}
+
+@media (max-width: 768px) {
+  .business__section--title {
+    font-size: 24px;
+  }
+  
+  .business__section--content {
+    flex-direction: column;
+  }
+  
+  .business__section--content p {
+    font-size: 14px;
+  }
+
+  .business--image  img  {
+    margin: 0;
+    padding: 15px;
   }
 }

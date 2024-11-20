@@ -78,84 +78,94 @@
       <video src="../../assets/videos/mv-pc.mp4" autoplay muted loop></video>
     </section>
     <!-- Our Business -->
-    <section class="home__section bussiness__section">
-      <h2 class="bussiness__section--title section--title">Our Bussiness</h2>
-      <div class="bussiness__section--content">
-        <p>
-          As a Digital Creative Studio, Sun* always prioritize the spirit of owning the products, thinking creatively in any project to bring the most "<b>awesome</b>" experience to end-users. With two service lines namely "<b>Creative & Engineering</b>" and "<b>Talent Platform</b>", Sun* has always been step by step with technology creating great value for society.
+    <section class="home__section mb-5 py-4">
+      <h2 class="section--title fs-1 fs-md-4 fw-bold ">Our Business</h2>
+      <div class="container bg-white rounded border border-light shadow-sm d-md-flex align-items-center justify-content-between position-relative business__section--content">
+        <p class="col-12 col-md-6 text-dark ps-5 py-1 py-md-5 pe-4 mb-0 w-md-50 bg-white fs-md-6 fw-normal">
+          As a Digital Creative Studio, Sun* always prioritizes the spirit of owning the products, thinking creatively in any project to bring the most "<b>awesome</b>" experience to end-users. With two service lines namely "<b>Creative & Engineering</b>" and "<b>Talent Platform</b>", Sun* has always been step by step with technology creating great value for society.
         </p>
-        <div class="bussiness--image">
-          <img src="../../assets/images/intro-business.png" alt="intro-business">
+        <div class="business--image bg-white d-flex justify-content-center align-items-center w-100 w-md-50 p-4 p-md-0">
+          <img src="../../assets/images/intro-business.png" alt="intro-business" class="img-fluid">
         </div>
       </div>
-    </section>
+    </section>    
 
-    <section class="home__section">
-      <div class="card__section">
-        <div class="creative__card card">
-          <p class="card--text">Digital Creative Studio</p>
-          <h2 class="creative__card--title">Creative <br> & Engineering</h2>
-          <p>Abundant human resource specializing in technology, design and business.</p>
-          <button class="card__button">
-            <span>See more</span>
-            <div class="card__icon">
-              <img src="../../assets/icons/right-icon.svg" alt="arrow">
-            </div>
-          </button>
-        </div>
-        <div class="platform__card card">
-          <p class="card--text">Digital Creative Studio</p>
-          <h2 class="platform__card--title">Talent <br> Platform</h2>
-          <p>Human resource solutions to support sustainable business growth.</p>
-          <button class="card__button platform-card__button">
-            <span>See more</span>
-            <div class="card__icon">
-              <img src="../../assets/icons/right-icon.svg" alt="arrow">
-            </div>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- Project -->
-    <section class="home__section">
-      <div class="project__section">
-        <h2 class="project__section--title">Our Project</h2>
-        <div class="project__section--content">
-          <div class="project-data">
-            <div class="data__group">
-              <div class="data__box">
-                <div class="data--number data__number--first"></div>
-                <div class="data__unit">
-                  <div class="data__unit--plus">++</div>
-                  <div class="data__unit--text">Clients</div>
-                </div>
-              </div>
-              <div class="data__box">
-                <div class="data--number data__number--second"></div>
-                <div class="data__unit">
-                  <div class="data__unit--plus">++</div>
-                  <div class="data__unit--text">Supported Services</div>
-                </div>
-              </div>
-            </div>
-            <button class="card__button platform-card__button project__button">
-              <span>See all project</span>
-              <div class="card__icon">
+    <section class="home__section container py-5">
+      <div class="row g-4 justify-content-between d-md-flex gap-5">
+        <div class="creative__card card col-md-5">
+          <div class="card-body">
+            <p class="card--text">Digital Creative Studio</p>
+            <h2 class="creative__card--title fw-bold">Creative <br> & Engineering</h2>
+            <p class="text-white fs-6 pb-4">Abundant human resource specializing in technology, design and business.</p>
+            <button class="card__button btn btn-primary d-flex align-items-center justify-content-center w-100">
+              <span class="position-relative">See more</span>
+              <div class="card__icon p-1 d-flex align-items-center justify-content-center ms-2">
                 <img src="../../assets/icons/right-icon.svg" alt="arrow">
               </div>
             </button>
           </div>
+        </div>
+        <div class="platform__card card col-md-5">
+          <div class="card-body">
+            <p class="card--text">Digital Creative Studio</p>
+            <h2 class="platform__card--title fw-bold">Talent <br> Platform</h2>
+            <p class="fs-6 pb-4">Human resource solutions to support sustainable business growth.</p>
+            <button class="card__button btn platform-card__button d-flex align-items-center justify-content-center w-100">
+              <span class="position-relative">See more</span>
+              <div class="card__icon p-1 d-flex align-items-center justify-content-center ms-2">
+                <img src="../../assets/icons/right-icon.svg" alt="arrow">
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section -->
+    <section class="home__section">
+      <div class="my-5 pb-5 container">
+        <h2 class="project__section--title fw-bold">Our Project</h2>
+        <div class="w-100 d-flex row flex-wrap flex-md-nowrap align-items-center">
+          <!-- Project Data Section -->
+          <div class="project-data col-12 col-md-6 mb-5">
+            <div class="data__group btn-group-vertical mb-5">
+              <div class="d-flex align-items-center mb-4">
+                <div class="data--number data__number--first"></div>
+                <div class="btn-group-vertical ps-3">
+                  <div class="data__unit--plus fw-bold">++</div>
+                  <div class="ms-2 fw-bold fs-4">Clients</div>
+                </div>
+              </div>
+              <div class="data__box d-flex align-items-center">
+                <div class="data--number data__number--second"></div>
+                <div class="data__unit ps-3">
+                  <div class="data__unit--plus fw-bold">++</div>
+                  <div class="ms-2 fw-bold fs-4">Supported Services</div>
+                </div>
+              </div>
+            </div>
+            <button class="card__button btn platform-card__button d-flex align-items-center justify-content-center w-100">
+              <span class="position-relative">See all project</span>
+              <div class="card__icon p-1 d-flex align-items-center justify-content-center ms-2">
+                <img src="../../assets/icons/right-icon.svg" alt="arrow">
+              </div>
+            </button>
+          </div>
+    
+          <!-- Slide Section -->
           <div class="slide__wrapper">
             <div class="slider-container">
               <input type="radio" name="slider" id="slide1" checked>
               <input type="radio" name="slider" id="slide2">
               <input type="radio" name="slider" id="slide3">
               <div class="slider">
+                <!-- Slide 1 -->
                 <div class="slide slide-first">
                   <div class="project__slide--content">
                     <div class="project__slide--company-name">SSK Company Limited</div>
-                    <div class="project__slide--project-name"> SSK Project </div>
-                    <div class="project__slide--description">Challenge to energize people and society with sports data.</div>
+                    <div class="project__slide--project-name">SSK Project</div>
+                    <div class="project__slide--description">
+                      Challenge to energize people and society with sports data.
+                    </div>
                     <div class="project__link">
                       <a href="./index.html">
                         <span>View Detail</span>
@@ -164,11 +174,14 @@
                     </div>
                   </div>
                 </div>
+                <!-- Slide 2 -->
                 <div class="slide">
                   <div class="project__slide--content">
                     <div class="project__slide--company-name">Công ty TNHH ZENKIGEN</div>
-                    <div class="project__slide--project-name"> HARUTAKA Project </div>
-                    <div class="project__slide--description">“HARUTAKA” allows companies and job seekers/ applicants to interview on the web or in video at any time, in any place.</div>
+                    <div class="project__slide--project-name">HARUTAKA Project</div>
+                    <div class="project__slide--description">
+                      “HARUTAKA” allows companies and job seekers to interview online at any time.
+                    </div>
                     <div class="project__link">
                       <a href="./index.html">
                         <span>View Detail</span>
@@ -177,11 +190,14 @@
                     </div>
                   </div>
                 </div>
+                <!-- Slide 3 -->
                 <div class="slide">
                   <div class="project__slide--content">
                     <div class="project__slide--company-name">Kurashicom Inc</div>
-                    <div class="project__slide--project-name"> KURASHICOM Project </div>
-                    <div class="project__slide--description">App development helps to realize the lifestyle that you want</div>
+                    <div class="project__slide--project-name">KURASHICOM Project</div>
+                    <div class="project__slide--description">
+                      App development helps to realize the lifestyle that you want.
+                    </div>
                     <div class="project__link">
                       <a href="#">
                         <span>View Detail</span>
@@ -191,7 +207,10 @@
                   </div>
                 </div>
               </div>
+    
+              <!-- Slider Navigation -->
               <div class="arrow__div">
+                <!-- Previous and Next Buttons -->
                 <label id="prev-slide1" class="prev arrow__label" for="slide3">
                   <img class="arrow__img" src="../../assets/icons/chevron-left-icon.svg" alt="left">
                 </label>
@@ -215,112 +234,119 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Carrer -->
-    <section class="home__section">
-      <div class="career_section">
-        <div class="career__title">
-          <div class="career--company-name">Sun Asterisk</div>
-          <div class="career-section--title">Career</div>
+    </section>    
+    <section class="home__section pb-5">
+      <div class="career_section position-relative text-white rounded-4 mb-5 pt-1 z-1">
+        <div class="text-center">
+          <div class="career--company-name fw-light fs-6 position-relative z-1">
+            Sun-asterisk
+          </div>
+          <h2 class="career-section--title fw-bold fs-1 mt-1 mb-4 position-relative z-1">Career</h2>
         </div>
-        <div class="career--quote">Join us & MAKE AWESOME THINGS THAT MATTER.</div>
-        <div class="career--description">Sun* has always been looking for challenge-driven people to create "awesome" values.</div>
-        <div class="career__button">
-          <button class="card__button">
-            <span>Join Sun*</span>
-            <div class="card__icon">
+    
+        <p class="fw-bold fs-4 text-center mb-4 position-relative z-1 text-white">
+          Join us & MAKE AWESOME THINGS THAT MATTER.
+        </p>
+        <p class="career--description fs-5 text-center position-relative z-1 text-white">
+          Sun* has always been looking for challenge-driven people to create "awesome" values.
+        </p>
+    
+        <div class="d-flex justify-content-center mt-4 pb-4">
+          <button class="card__button btn btn-primary d-flex align-items-center justify-content-center col-12 col-md-6 mt-5">
+            <span class="position-relative">Join Sun*</span>
+            <div class="card__icon p-1 d-flex align-items-center justify-content-center ms-2">
               <img src="../../assets/icons/right-icon.svg" alt="arrow">
             </div>
           </button>
         </div>
       </div>
     </section>
+    
     <!-- Environment -->
-    <section class="home__section">
-      <div class="enviroment__section">
-        <h2 class="enviroment__section--title">Working environment</h2>
-        <div class="environment__content">
-          <div class="environment__description">
-            <ul class="environment__description--items">
-              <li class="environment__description--item">
-                <div class="environment__item--mark">
-                  <img src="../../assets/icons/correct-icon.svg" alt="correct">
+    <section class="home__section mt-4">
+      <div class="container">
+        <h2 class="my-4 enviroment__section--title fw-bold">Working Environment</h2>
+        <div class="row align-items-center">
+          <!-- Description -->
+          <div class="col-lg-6">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-start mb-4 ">
+                <div class="me-4 environment__item--mark">
+                  <img src="../../assets/icons/correct-icon.svg" alt="correct" class="rounded-circle border border-light" style="width: 50px; height: 40px;">
                 </div>
-                <div class="enviroment__item--description">
-                  #ActiveChallenge: Actively create continuous challenges.
-                </div>
+                <p class="mb-0 fs-6 ">#ActiveChallenge: Actively create continuous challenges.</p>
               </li>
-              <li class="environment__description--item">
-                <div class="environment__item--mark">
-                  <img src="../../assets/icons/correct-icon.svg" alt="correct">
+              <li class="d-flex align-items-start mb-4">
+                <div class="me-4 environment__item--mark">
+                  <img src="../../assets/icons/correct-icon.svg" alt="correct" class="rounded-circle border border-light" style="width: 50px; height: 40px;">
                 </div>
-                <div class="enviroment__item--description">
-                  #ActiveLearn: Learning within an organization encompasses all essential components, including the Learning Environment, Learning Opportunities, and Learning Capacity.
-                </div>
+                <p class="mb-0 fs-6">#ActiveLearn: Learning within an organization encompasses all essential components, including the Learning Environment, Learning Opportunities, and Learning Capacity.</p>
               </li>
-              <li class="environment__description--item">
-                <div class="environment__item--mark">
-                  <img src="../../assets/icons/correct-icon.svg" alt="correct">
+              <li class="d-flex align-items-start mb-4">
+                <div class="me-4 environment__item--mark">
+                  <img src="../../assets/icons/correct-icon.svg" alt="correct" class="rounded-circle border border-light" style="width: 50px; height: 40px;">
                 </div>
-                <div class="enviroment__item--description">
-                  #ActiveJoy: Thriving in a cultural environment focused on human values and universal happiness.
-                </div>
+                <p class="mb-0 fs-6">#ActiveJoy: Thriving in a cultural environment focused on human values and universal happiness.</p>
               </li>
             </ul>
           </div>
-          <div class="environment-image">
-            <img src="../../assets/images/human-centered.png" alt="intro-business">
-            <div>
-              <button class="platform-card__button card__button enviroment__button">
-                <span>See detail</span>
-                <div class="card__icon">
-                  <img src="../../assets/icons/right-icon.svg" alt="arrow">
-                </div>
-              </button>
-            </div>
+          <!-- Image and Button -->
+          <div class="col-lg-6 position-relative text-center">
+            <img src="../../assets/images/human-centered.png" alt="intro-business" class="img-fluid">
+            <button class="card__button btn platform-card__button d-flex align-items-center justify-content-center position-absolute enviroment__button">
+              <span class="position-relative">See detail</span>
+              <div class="card__icon p-1 d-flex align-items-center justify-content-center ms-2">
+                <img src="../../assets/icons/right-icon.svg" alt="arrow">
+              </div>
+            </button>
           </div>
         </div>
       </div>
     </section>
+    
     <!-- Culture -->
     <section class="home__section">
-      <div class="culture__section">
-        <h2 class="enviroment__section--title culture__section--title">Culture - Event</h2>
-        <div class="culture__box">
-          <div class="culture__card">
-            <div class="culture__card--image">
-              <img src="../../assets/images/culture-event.webp" alt="culture-event">
-              <div class="culture__card--label">
-                <span>Hot news</span>
+      <div class="container culture__section position-relative">
+        <h2 class="fw-bold mt-5 mb-5 position-relative">
+          Culture - Event
+        </h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card border-0 shadow-sm">
+              <div class="position-relative">
+                <img src="../../assets/images/culture-event.webp" alt="culture-event" class="card-img-top rounded-3">
+                <div class="badge position-absolute top-0 end-0 bg-danger text-white p-2 rounded-pill">
+                  Hot news
+                </div>
               </div>
-            </div>
-            <div class="culture-event__content">
-              <a href="./index.html" class="culture-event--link">
-                Participant: We gained a great knowledge in TechUp #2 by Sun*!
-              </a>
-              <div class="culture-event--description">“I swiped my card 10$ to buy Copilot during the practical sharing session by speakers,” an engineer shared with us after participating in TechUp #2: "Applying AI to Improve Programming Efficiency and Create Breakthrough Products" – an event hosted by Sun*.</div>
-              <div class="culture-event__detail">
-                <a href="./index.html">
-                  <div class="culture-event__detail--text">See detail</div>
-                  <div class="culture-event__icon">
-                    <img src="../../assets/icons/right-icon.svg" alt="right">
+              <div class="card-body">
+                <a href="./index.html" class="summary__section--title text-dark fw-bold d-block mb-2 text-decoration-none card--text position-relative z-1">
+                  Participant: We gained a great knowledge in TechUp #2 by Sun*!
+                </a>
+                <p class="small card__description py-2 overflow-hidden">
+                  “I swiped my card 10$ to buy Copilot during the practical sharing session by speakers,” an engineer shared with us after participating in TechUp #2: "Applying AI to Improve Programming Efficiency and Create Breakthrough Products" – an event hosted by Sun*.
+                </p>
+                <a href="./index.html" class="text-danger d-flex align-items-center">
+                  <span class="fw-bold">See detail</span>
+                  <div class="ms-2 bg-light rounded-circle">
+                    <img src="../../assets/icons/right-icon.svg" alt="arrow" width="20" height="18" class="pb-1">
                   </div>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="culture__button">
-          <button class="platform-card__button card__button">
-            <span>See more</span>
-            <div class="card__icon">
+        <div class="d-flex justify-content-center mt-5 mb-4">
+          <button class="card__button btn platform-card__button d-flex align-items-center justify-content-center col-md-6 col-12">
+            <span class="position-relative">See more</span>
+            <div class="card__icon p-1 d-flex align-items-center justify-content-center ms-2">
               <img src="../../assets/icons/right-icon.svg" alt="arrow">
             </div>
           </button>
         </div>
       </div>
     </section>
-
+    
     <div class="widget__box">
       <div class="widget__button">
         <a href="./index.html"> Join us</a>

@@ -1,4 +1,4 @@
-/* Environment section */
+/* Environment section
 
 .environment__content {
   display: flex;
@@ -121,4 +121,35 @@
   .enviroment__item--description {
     font-size: 15px;
   }
+} */
+
+.enviroment__section--title {
+  color: #2b3441;
+}
+
+.enviroment__button {
+  left: 48px;
+  right: 48px;
+  bottom: 48px;
+  width: 82%;
+}
+
+.environment__item--mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 6px solid #f9f9f9;
+  margin-right: 27px;
+}
+
+.environment__item--mark img {
+  width: 50px;
+  height: 40px;
+  position: relative;
+  left: -5px;
+  top: -7px;
+}
+
+.environment__item--mark ~ p {
+  color: #4d5969;
 }

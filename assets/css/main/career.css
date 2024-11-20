@@ -1,21 +1,13 @@
 /* Career Section */
-
 .career_section {
-  align-items: center;
-  background-image: url(../../assets/images/career-bg.jpg);
+  background-image: url(../../images/career-bg.jpg);
   background-size: cover;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 80px;
-  position: relative;
-  padding: 0 5%;
+  background-position: center;
+  padding: 5%;
 }
 
-.career_section div {
-  color: #fff;
-  position: relative;
-  z-index: 1;
+.career--company-name {
+  padding-top: 100px;
 }
 
 .career_section::before {
@@ -28,21 +20,6 @@
   top: 0;
   left: 0;
   z-index: 0;
-}
-
-.career__title {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.career--company-name {
-  font-weight: 300;
-  font-size: 18px;
-  padding-top: 100px;
-  text-align: center;
-  width: 100%;
 }
 
 .career--company-name::before {
@@ -71,96 +48,20 @@
 }
 
 .career-section--title {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin-bottom: 80px;
-  text-align: center;
-  width: 100%;
-}
-
-.career--quote {
-  font-weight: 700;
-  margin-bottom: 30px;
-  font-size: 32px;
-  text-align: center;
-  line-height: 1.8;
+  font-size: 2.5rem;
+  padding-bottom: 4rem;
 }
 
 .career--description {
-  font-size: 24px;
-  line-height: 1.8;
-  text-align: center;
+  font-size: 1.25rem;
 }
 
-.career__button {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  width: 406px;
-}
 
-@media screen and (max-width: 1440px) {
+@media (max-width: 767px) {
   .career-section--title {
-      font-size: 48px;
+    font-size: 2rem;
   }
-
-  .career--quote {
-    font-size: 24px;
-  }
-
   .career--description {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .career--company-name {
-      font-size: 16px;
-  }
-
-  .career-section--title {
-      font-size: 40px;
-  }
-
-  .career--quote {
-    font-size: 22px;
-  }
-
-  .career--description {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .career-section--title {
-    font-size: 36px;
-    margin-bottom: 60px;
-  }
-
-  .career--quote {
-    font-size: 20px;
-  }
-
-  .career--description {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .career--company-name::after {
-    top: 55px;
-    left: 35px;
-  }
-
-  .career-section--title {
-    font-size: 32px;
-  }
-
-  .career--description {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
